@@ -1,0 +1,327 @@
+@media (max-width: 1200px) {
+	.productImg {
+		width: 220px;
+		height: 220px;
+	}
+}
+
+@media (max-width: 992px) {
+	.addressSite h1 {
+		font-size: 40px;
+	}
+
+	.addressSite h4 {
+		font-size: 20px;
+	}
+
+	.mainHeader h1 {
+		font-size: 50px;
+		margin: 20px 0;
+	}
+
+	.mainHeader h3 {
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+
+	.product {
+		margin-bottom: 50px;
+	}
+
+	.productImg {
+		width: 300px;
+		height: 300px;
+	}
+
+	.bannerText {
+		font-size: 18px;
+	}
+
+	.bannerImg {
+		height: 400px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.headItems {
+		position: static;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.menu {
+		width: 110px;
+	}
+
+	.hamburger {
+		margin: 0 10px;
+	}
+
+	.addressSite {
+		-webkit-transform: initial;
+		transform: initial;
+		right: 30px;
+	}
+
+	.addressSite h1 {
+		font-size: 30px;
+	}
+
+	.addressSite h4 {
+		font-size: 16px;
+	}
+
+	.mainHeader {
+		margin: 40px 0 60px 0;
+	}
+
+	.mainHeader h1 {
+		font-size: 36px;
+		margin: 17px 0;
+	}
+
+	.mainHeader h3 {
+		margin-bottom: 17px;
+		font-size: 18px;
+	}
+
+	.product {
+		margin-bottom: 40px;
+	}
+
+	.productImg {
+		width: 250px;
+		height: 250px;
+	}
+
+	.productText,
+	.popularCommodityText {
+		font-size: 16px;
+		margin-top: 17px;
+	}
+
+	.popularCommodity {
+		margin-bottom: 40px;
+	}
+
+	.popularCommoditysHeader h2 {
+		font-size: 33px;
+		margin: 40px 0;
+	}
+
+	.popularCommodityIcon i {
+		font-size: 60px;
+	}
+
+	.popularCommoditys .blockCommodity {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.popularCommodityText {
+		font-size: 11px;
+	}
+
+	.footerInfo ul li:nth-child(1) {
+		font-size: 16px;
+	}
+
+	.menuBlock {
+		width: 100vw;
+		left: -100vw;
+		height: 100vh;
+	}
+
+	.activMenu {
+		left: 0 !important;
+	}
+
+	.bannerText {
+		font-size: 16px;
+	}
+
+	.bannerImg {
+		height: auto;
+	}
+
+}
+
+@media (max-width: 577px) {
+	.menu {
+		margin-left: 30px;
+		width: 100px;
+	}
+
+	.addressSite h1 {
+		font-size: 27px;
+	}
+
+	.addressSite h4 {
+		font-size: 14px;
+	}
+
+	.mainHeader h1 {
+		font-size: 33px;
+		margin: 15px 0;
+	}
+
+	.adUnit {
+		height: 100px;
+	}
+
+	.mainHeader h3 {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+
+	.products {
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.product {
+		width: 34%;
+	}
+
+	.productImg {
+		width: 220px;
+		height: 220px;
+	}
+
+	.popularCommoditys .blockCommodity {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.popularCommodity {
+		width: 40%;
+	}
+
+	.footerInfo,
+	.popularCommodity:nth-child(1),
+	.popularCommodity:nth-child(2),
+	.popularCommodity:nth-child(3) {
+		width: 30%;
+	}
+
+	.logoInfoBlock {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.infoBlock {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.footerInfoBlock {
+		margin-top: 0;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.head,
+	.headItems {
+		height: 105px;
+	}
+
+	.menu {
+		margin-left: 15px;
+	}
+	
+	.menuBlock {
+		top: 105px;
+	}
+
+	.main {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.addressSite h1 {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+	.addressSite h4 {
+		display: none;
+	}
+
+	.menuBlock a {
+		padding: 7px 0;
+	}
+
+	.mainHeader {
+		margin: 30px 0 40px 0;
+		text-align: center;
+	}
+
+	.mainHeader h1 {
+		font-size: 28px;
+		margin: 10px 0;
+	}
+
+	.mainHeader h3 {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.productImg {
+		width: 150px;
+		height: 150px;
+	}
+
+	.productText {
+		font-size: 13px;
+		margin-top: 15px;
+	}
+
+	.product {
+		margin-bottom: 30px;
+	}
+
+	.popularCommoditysHeader h2 {
+		font-size: 26px;
+		margin: 30px 0;
+	}
+
+	.popularCommodity {
+		margin-bottom: 30px;
+	}
+
+	.footerInfo {
+		text-align: center;
+	}
+
+	.footerInfo ul {
+		border-left: none;
+	}
+
+	.footerInfo ul li:nth-child(1) {
+		white-space: normal;
+		line-height: 120%;
+	}
+
+	.footer {
+		padding: 20px 0 10px 0;
+	}
+
+}

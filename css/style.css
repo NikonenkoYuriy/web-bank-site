@@ -1,0 +1,550 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #89e0c3;
+	height: 100%;
+	min-height: 100%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+}
+
+div,
+p,
+h6 {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.head {
+	height: 130px;
+	width: 100%;
+	background-color: #272741;
+}
+
+.headItems {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 130px;
+	text-align: center;
+}
+
+.menu {
+	border: 2px solid #fff;
+	border-radius: 3px;
+	width: 120px;
+	height: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.menu h6 {
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.hamburger {
+	width: 30px;
+	height: 21px;
+	margin: 0 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: inherit;
+	height: 3px;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	-webkit-transition: top .2s ease, opacity .5s ease, -webkit-transform .7s ease;
+	transition: top .2s ease, opacity .5s ease, -webkit-transform .7s ease;
+	transition: transform .7s ease, top .2s ease, opacity .5s ease;
+	transition: transform .7s ease, top .2s ease, opacity .5s ease, -webkit-transform .7s ease;
+}
+
+.hamburger span:nth-child(1) {
+	top: 0;
+}
+
+.hamburger span:nth-child(2) {
+	top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+	top: 16px;
+}
+
+.hamburger.toggleHamburger span:nth-child(1) {
+	top: 8px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.hamburger.toggleHamburger span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.toggleHamburger span:nth-child(3) {
+	top: 8px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.headItems {
+	position: relative;
+}
+
+.addressSite {
+	letter-spacing: 2px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin-left: calc(50% - 120px);
+}
+
+.addressSite a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.addressSite h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+.addressSite h4 {
+	text-transform: capitalize;
+}
+
+/*------------main---------------*/
+.main {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.adUnit {
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.adUnit img {
+	width:100%;
+	height: auto;
+}
+
+.mainHeader {
+	margin: 50px 0 100px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgb(137, 224, 195);
+	background: -webkit-gradient(linear, left top, right top, from(rgba(137, 224, 195, 1)), color-stop(50%, rgba(252, 252, 252, 1)), to(rgba(137, 224, 195, 1)));
+	background: linear-gradient(to right, rgba(137, 224, 195, 1) 0%, rgba(252, 252, 252, 1) 50%, rgba(137, 224, 195, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89e0c3', endColorstr='#89e0c3', GradientType=1);
+	text-align: center;
+
+}
+
+.mainHeader h1 {
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	font-size: 67px;
+	margin: 30px 0;
+}
+
+.mainHeader h3 {
+	color: #483c3c;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+/*---------block-products--------------*/
+.product {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.productImg {
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-radius: 30px;
+	border: 10px solid #e0faeb;
+	-webkit-transition: border 1s ease;
+	transition: border 1s ease;
+}
+
+.product:hover .productImg {
+	border: 10px solid #79c7ad;
+}
+
+.productImg a {
+	display: inline-block;
+}
+
+.productImg a,
+.productImg a img {
+	height: inherit;
+	width: inherit;
+}
+
+.productText,
+.popularCommodityText {
+	font-size: 18px;
+	margin-top: 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+}
+
+/*---------popularCommodityHeader--------*/
+.popularCommoditys {
+	background-color: #fff;
+	border-top: 10px solid #272741;
+}
+
+.popularCommoditysHeader {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-transform: capitalize;
+}
+
+.popularCommoditysHeader h2 {
+	font-size: 45px;
+	margin: 70px 0;
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1px;
+}
+
+.popularCommoditys .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.popularCommodity a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 70px;
+	text-decoration: none;
+	color: rgb(33, 37, 41);
+}
+
+.popularCommodityIcon i {
+	font-size: 70px;
+	color: #20e8a5;
+}
+
+/*------------footer-------------*/
+.footer {
+	background-color: #272741;
+	padding: 30px 0;
+}
+
+.footerInfo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.footerInfo ul {
+	border-left: 1px solid #ccc;
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+.footerInfo ul li {
+	color: dodgerblue;
+	line-height: 180%;
+}
+
+.footerInfo ul li a:nth-child(1) {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 18px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+/*----------menuBlock----------*/
+.menuBlock {
+	width: 250px;
+	position: absolute;
+	left: -300px;
+	top: 130px;
+	-webkit-transition: left .7s ease;
+	transition: left .7s ease;
+}
+
+.activMenu {
+	left: 0;
+}
+
+.menuBlock ul {
+	padding-left: 0;
+}
+
+.menuBlock a {
+	background-color: #272741;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	color: #fff;
+	padding: 15px 0;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: background-color .7s ease;
+	transition: background-color .7s ease;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.menuBlock a:hover {
+	background-color: #383871;
+}
+
+.fa-angle-right:before {
+	font-size: 30px;
+}
+
+/*--------------offers-page------------------*/
+.main.offersPage {
+	padding-bottom: 20px;
+}
+
+.bannerBlock {
+	margin-bottom: 30px;
+}
+
+.bannerBlock:last-child {
+	margin-bottom: 0;
+}
+
+.bannerImg {
+	width: 100%;
+	height: 550px;
+	display: block;
+}
+
+.bannerText {
+	background-color: #f4f4f4;
+	padding: 20px;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+/*-------------mortgage-page---------------*/
+.fixedRate {
+	width: 100%;
+	padding: 7px 0;
+	text-align: center;
+	background-color: #08C076;
+	text-transform: capitalize;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.listBlocks {
+	padding-top: 30px;
+	background-color: #f4f4f4;
+}
+
+.infoBlock {
+	border: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	-webkit-transition: -webkit-box-shadow .7s ease;
+	transition: -webkit-box-shadow .7s ease;
+	transition: box-shadow .7s ease;
+	transition: box-shadow .7s ease, -webkit-box-shadow .7s ease;
+	background-color: #fff;
+}
+
+.infoBlock:hover {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.rateInfoBlock ul {
+	padding-left: 0;
+}
+
+.headInfoBlock .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.logoImg img {
+	max-width: 230px;
+	height: auto;
+}
+
+
+.logoText {
+	color: #007bff;
+	text-transform: capitalize;
+	font-size: 21px;
+}
+
+.rateInfoBlock ul {
+	height: 100%;
+}
+
+.rateInfoBlock li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.rateInfoBlock li span {
+	line-height: 200%;
+}
+
+.footerInfoBlock {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.footerInfoBlock a {
+	text-decoration: none;
+	color: #212529;
+}
+
+.interestRate,
+.loanTerm {
+	text-transform: capitalize;
+}
+
+.interestRatePercent,
+.aprPercent,
+.term {
+	font-weight: 700;
+}
+
+.apr,
+.term {
+	text-transform: uppercase;
+}
+
+.mobileMenu {
+	width: 100vw;
+	height: 100vh;
+}
+
+/*---------------savings-page----------------*/
+.fixedRate > span {
+	text-transform: uppercase;
+}
+
+.savingsPage .logoImg img {
+	width: 260px;
+	height: auto;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #FFEB61;
+	margin-bottom: 0;
+}
+
+.savingsPage .logoText {
+	font-size: 15px;
+	width: 230px;
+	text-align: right;
+}
+
+.savingsPage .interestRate,
+.savingsPage .apr,
+.savingsPage .loanTerm {
+	font-weight: 700;
+}
+
+.savingsPage .interestRatePercent,
+.savingsPage .aprPercent,
+.savingsPage .term {
+	font-weight: 400;
+}
